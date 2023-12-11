@@ -35,7 +35,7 @@
     "**/*.tsx",
     "src/models/userModel.js",
     "src/config/dbConfig.js"
-  ],
+, "src/app/(private)/tasks/addtask/page.js"  ],
   "exclude": [
     "node_modules"
   ]

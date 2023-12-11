@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function middleware(request) {
   try {
-    // console.log('middleware executed for :',request.nextUrl.pathname);
+     console.log('middleware executed for :',request.nextUrl.pathname);
     const publicRoute =
       request.nextUrl.pathname === "/login" ||
       request.nextUrl.pathname === "/register";
@@ -25,5 +25,5 @@ export async function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/", "/register", "/login","/client_home"],
+  matcher: ["/", "/register", "/login","/private/:path"],
 };
